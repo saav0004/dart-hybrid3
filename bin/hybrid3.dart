@@ -1,5 +1,4 @@
 import 'dart:convert';
-// import Student class
 import 'package:hybrid3/hybrid3.dart' as hybrid3;
 
 void main(List<String> arguments) {
@@ -26,10 +25,12 @@ void main(List<String> arguments) {
     return resultMap;
   }).toList();
 
+  // print(resultMapList);
+
   hybrid3.Student student = hybrid3.Student(resultMapList);
   student.plus({
     'first': 'Luciano',
-    'last': 'Aavedra',
+    'last': 'Saavedra',
     'email': 'saav0004@algonquin.com'
   });
   student.sort('last');

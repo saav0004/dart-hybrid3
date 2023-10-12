@@ -1,8 +1,8 @@
 class Student {
   late List<Map<String, String>> people;
 
-  Student(List<Map<String, String>> initialData) {
-    people = initialData;
+  Student(List<Map<String, String>> data) {
+    people = data;
   }
 
   void sort(String field) {
@@ -20,6 +20,6 @@ class Student {
   }
 
   void remove(String field, String value) {
-    people.removeWhere((element) => element[field] == value);
+    people.removeWhere((item) => item[field] == value);
   }
 }
